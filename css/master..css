@@ -1,0 +1,151 @@
+.perant{
+  width: 640px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around
+}
+
+.-E{
+  left: 20px;
+display: flex;
+width: 300px;
+height: 600px;
+background-color: #323234;
+align-content: stretch;
+flex-wrap: wrap;
+flex-direction: column;
+align-items: flex-end;
+justify-content: space-evenly;
+}
+
+.one{
+width: 220px;
+height: 190px;
+background-color: white;
+}
+.two{
+  width: 220px;
+  height: 190px;
+  background-color: white;
+}
+
+
+.-E::before{
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: #ff9800;
+  position: absolute;
+  left: 235px;
+  top: 22px;
+  animation-name: move;
+  animation-duration:10s ;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+@keyframes move {
+  
+  0%{
+    
+     left: 260px;
+    top: 22px;
+  }
+  20%{
+    left: 25px;
+    top: 22px;
+  }
+
+  30%{
+    left: 25px;
+    top: 290px;
+  }
+  
+  40%{
+    left: 260px;
+    top: 290px;
+  }
+ 50%{
+  left: 25px;
+  top: 290px;
+ }
+ 60%{
+  left: 25px;
+  top: 555px;
+ }
+
+ 70%{
+  left: 260px;
+  top: 555px;
+ }
+ 80%{
+  left: 25px;
+  top: 555px;
+ }
+ 90%{
+  left: 25px;
+  top: 22px;
+ }
+}
+
+.-l{
+  bottom: 96px;
+  display: flex;
+  width: 300px;
+  height: 600px;
+  background-color: #323234;
+  align-items: flex-end;
+  justify-content: flex-end;
+  left: 345px;
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
+  align-content: space-between;
+}
+
+.one-l{
+  width: 235px;
+  height: 525px;
+  background-color: white;
+
+}
+
+
+.-l::before{
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color:transparent;
+  position: absolute;
+  top: 550px;
+  left: 585px;
+  animation-name: move-2;
+  animation-duration:10s ;
+  animation-iteration-count:infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
+}
+
+@keyframes move-2 {
+  10%{
+    background-color:#ff9800;
+  }
+  
+  20%{
+    top: 550px;
+    left: 355px;
+    background-color:#ff9800;
+  }
+  30%{
+    left: 352px;
+    background-color:#ff9800;
+    top: 10px; 
+  }
+  35%{
+    background-color: transparent;
+    left: 352px;
+    top: 12px; 
+  }
+}
